@@ -1,0 +1,34 @@
+.basket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 70px;
+  flex-wrap: wrap;
+  padding: 160px 30px 30px 30px;
+}
+.basketDec {
+  display: flex;
+  gap: 20px;
+}
+.basketInc {
+  font-size: 20px;
+
+  background-color: white;
+  border: none;
+}
+.basketMap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.total {
+  font-size: 30px;
+  font-weight: bolder;
+  background-color: #218816;
+  padding: 13px 30px;
+  color: white;
+  border-radius: 10px;
+}

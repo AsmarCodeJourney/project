@@ -1,0 +1,549 @@
+.homeHero {
+  // padding: 150px 30px 30px 30px;
+  position: relative;
+  width: 100%;
+  background-color: #f2fbff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.homeImg {
+  margin-top: 600px;
+  position: absolute;
+  width: 100%;
+}
+@media only screen and (max-width: 1254px) {
+  .homeImg {
+    margin-top: 590px;
+  }
+}
+@media only screen and (max-width: 1221px) {
+  .homeImg {
+    margin-top: 570px;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .homeImg {
+    margin-top: 540px;
+  }
+}
+@media only screen and (max-width: 1085px) {
+  .homeImg {
+    display: none;
+  }
+}
+
+.homeSec {
+  background-color: #f2fbff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 50px;
+}
+.secContainer {
+  padding: 40px;
+  max-width: 80%;
+  display: flex;
+  gap: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.secBox {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+.secİcon {
+  border: 1px solid #b9d0df;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #b9d0df;
+  font-size: 30px;
+}
+.secBox:hover {
+  color: #007cb0;
+}
+@media only screen and (max-width: 1126px) {
+  .secContainer {
+    max-width: 95%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .homeSec {
+    padding: 20px;
+  }
+  .secContainer {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 868px) {
+  .homeSec {
+    padding: 20px;
+  }
+  .secContainer {
+    font-size: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .secBox {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .homeSec {
+    padding: 40px;
+  }
+  .secBox {
+    width: 80%;
+  }
+}
+
+.productsContainer {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.productsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 300px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  height: 540px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 7px;
+}
+.productsBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.productsBox h3 {
+  color: #228716;
+}
+.productsBox p {
+  color: rgb(128, 124, 124);
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+.productsDis {
+  display: flex;
+  gap: 20px;
+}
+
+.productsBtn {
+  font-size: 18px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  will-change: box-shadow, transform;
+  background: radial-gradient(100% 100% at 100% 0%, #5ac199 0%, #228716 100%);
+  box-shadow: 0px 0.01em 0.01em rgb(45 35 66 / 40%),
+    0px 0.3em 0.7em -0.01em rgb(45 35 66 / 30%),
+    inset 0px -0.01em 0px rgb(58 65 111 / 50%);
+  padding: 0 2em;
+  border-radius: 0.3em;
+  color: #fff;
+  height: 2.6em;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 40%);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.productsBtn:hover {
+  box-shadow: 0px 0.1em 0.2em rgb(45 35 66 / 40%),
+    0px 0.4em 0.7em -0.1em rgb(45 35 66 / 30%), inset 0px -0.1em 0px #228716;
+  transform: translateY(-0.1em);
+}
+
+.productsBtn:active {
+  box-shadow: inset 0px 0.1em 0.6em #228716;
+  transform: translateY(0em);
+}
+
+.homePets {
+  padding: 50px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.homePetsBox {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+  font-weight: bolder;
+  border-radius: 7px;
+  padding: 10px;
+}
+.homePetsBox:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  color: #228716;
+}
+
+// discount sec
+.discount {
+  padding: 50px;
+}
+.discountContainer {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #009cd2;
+  border-radius: 30px;
+  gap: 30px;
+}
+.discountRight1 {
+  max-width: 300px;
+}
+.discountLeft {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: bolder;
+  gap: 30px;
+}
+.discountText {
+  font-size: 25px;
+}
+.discountText1 {
+  font-size: 40px;
+}
+.discountRight {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  max-width: 500px;
+  line-height: 25px;
+  gap: 10px;
+}
+.crossed-price {
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+.crossed-price::before,
+.crossed-price::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 70%;
+  height: 2px;
+}
+.crossed-price::after {
+  transform: rotate(-10deg);
+  background: rgb(167, 20, 20);
+}
+@media only screen and (max-width: 1024px) {
+  .discountContainer {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 744px) {
+  .discount__ p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 624px) {
+  .discountRight {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .discountText {
+    font-size: 20px;
+  }
+  .discountText1 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  .discountText1 {
+    font-size: 20px;
+  }
+  .discount__ p {
+    font-size: 15px;
+  }
+}
+.fooder {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.brend {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.brendContainer {
+  display: flex;
+  gap: 30px;
+}
+.homeEnd {
+  background-image: url("https://preview.colorlib.com/theme/petsitting/images/bg_2.jpg");
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  text-align: center;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.homeEndContainer {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.homeEndBox {
+  min-height: 300px;
+  width: 300px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 40px;
+}
+.homeEndBox p {
+  color: rgb(130, 127, 127);
+  line-height: 20px;
+}
+.homeEndİmg {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.brendSlider {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.brendSliderBox {
+  max-width: 200px;
+  border-radius: 7px;
+  padding: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#productWish1 {
+  margin-left: 220px;
+  border: 1px solid rgb(161, 155, 155);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#productWish2 {
+  margin-left: 170px;
+  border: 1px solid rgb(161, 155, 155);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.productsBox .fa-solid {
+  color: #e21e4c;
+}
+@media only screen and (max-width: 817px) {
+  #productWish2 {
+    margin-left: 70px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  #productWish2 {
+    margin-left: 180px;
+  }
+}
+@media only screen and (max-width: 398px) {
+  #productWish2 {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 1149px) {
+  #productWish1 {
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width: 1022px) {
+  #productWish1 {
+    margin-left: 180px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #productWish1 {
+    margin-left: 160px;
+  }
+}
+@media only screen and (max-width: 692px) {
+  #productWish1 {
+    margin-left: 100px;
+  }
+}
+@media only screen and (max-width: 461px) {
+  #productWish1 {
+    margin-left: 220px;
+  }
+}
+
+.homeEnd_ {
+  width: 100%;
+  padding: 30px 0px 30px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.homeEnd_Container {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.homeEnd_Box {
+  width: 45%;
+  height: auto;
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.homeEnd_BoxLeft {
+  width: 300px;
+  height: 100px;
+}
+.homeEnd_BoxLeft img {
+  width: 100%;
+  height: 100px;
+}
+.homeEnd_BoxRight {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.homeEnd_BoxRight h4 {
+  font-size: 14px;
+  color: #258b21;
+}
+.homeEnd_BoxRight p {
+  font-size: 13px;
+  line-height: 20px;
+  color: rgb(117, 110, 110);
+}
+.homeEnd_BoxRightBtn {
+  width: 100px;
+  height: 40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 0px solid #258b21;
+  background-color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.homeEnd_Box:hover {
+  .homeEnd_BoxRightBtn {
+    background-color: #258b21;
+    color: white;
+    transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .homeEnd_Box {
+    width: 100%;
+  }
+  .homeEnd_BoxLeft {
+    width: 300px;
+    height: 150px;
+  }
+  .homeEnd_BoxLeft img {
+    height: 150px;
+    width: 300px;
+  }
+}
+
+@media only screen and (max-width: 687px) {
+  .homeEnd_BoxLeft {
+    width: 200px;
+    height: 100px;
+  }
+  .homeEnd_BoxLeft img {
+    height: 100px;
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 531px) {
+  .homeEnd_Box {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+.acs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 50px 0px 0px 50px;
+  text-align: center;
+}
+.acs h1 {
+  letter-spacing: 1px;
+}
+.advertising {
+  width: 100%;
+}
+.advertisingContainer {
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+}
+.advertisingContainer img {
+  width: 100%;
+  min-height: 150px;
+}

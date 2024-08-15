@@ -1,0 +1,25 @@
+.category {
+  padding: 150px 30px 30px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+#productWish {
+  margin-left: 230px;
+  border: 1px solid rgb(161, 155, 155);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+@media only screen and (max-width: 351px) {
+  #productWish {
+    margin-left: 200px;
+  }
+}
